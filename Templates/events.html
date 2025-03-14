@@ -1,0 +1,91 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Events Section -->
+    <section id="events" class="events section">
+
+      <img class="slider-bg" src="{% static 'assets/img/events-bg.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/events-slider/events-slider-2.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>ksh5000</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Ngemi Homecoming 3.0. 08 March 2025. Celebrating the vibrant blend of Kikuyu art, music, & culture. Join us for a day of live music, spoken word, poetry, ...
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>John Walker</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Hennessy</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Moratina</span></li>
+                  </ul>
+                  <p>
+                    Liquor, spirits, distilled spirits, or spiritous liquor are alcoholic drinks produced by the distillation of grains, fruits, vegetables, or sugar that have already gone through alcoholic fermentation.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/events-slider/events-slider-3.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Parties</h3>
+                  <div class="price">
+                    <p><span>ksh6000</span></p>
+                  </div>
+                  <p class="fst-italic text-danger" >
+                      THE EVENTS THAT WE OFFER
+                    </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Ngemi festival.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Clubbing.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Weddings.</span></li>
+                  </ul>
+                  <p>
+                   Liquor, spirits, distilled spirits, or spiritous liquor are alcoholic drinks produced by the distillation of grains, fruits, vegetables, or sugar that have already gone through alcoholic fermentation.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
+
+{% endblock %}
