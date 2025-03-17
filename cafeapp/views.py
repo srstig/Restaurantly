@@ -1,6 +1,5 @@
 import json
-
-from django.contrib.sites import requests
+import requests
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from cafeapp.models import *
@@ -92,6 +91,11 @@ def gallery(request):
 def specials(request):
     return render(request, 'specials.html')
 
+
+
+
+
+
 #Mpesa API
 def token(request):
     consumer_key = '77bgGpmlOxlgJu6oEXhEgUgnu0j2WYxA'
@@ -152,9 +156,3 @@ def stk(request):
 def transactions_list(request):
     transactions = Transaction.objects.all().order_by('-date')
     return render(request, 'transactions.html', {'transactions': transactions})
-
-def testimonials(request):
-    return render(request, 'testimonials.html')
-
-def whyus(request):
-    return render(request, 'whyus.html')

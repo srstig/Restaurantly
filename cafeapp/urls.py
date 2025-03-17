@@ -15,8 +15,6 @@ urlpatterns = [
     path('gallery/', views.gallery, name='gallery'),
     path('menu/', views.menu, name='menu'),
     path('specials/', views.specials, name='specials'),
-    path('testimonials/', views.testimonials, name='testimonials'),
-    path('whyus/', views.whyus, name='whyus'),
     path('editbooking/<int:id>', views.editbookinginfo, name='editbooking'),
     path('show/', views.show, name='show'),
 

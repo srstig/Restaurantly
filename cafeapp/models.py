@@ -16,7 +16,7 @@ class Booking(models.Model):
     email = models.EmailField()
     phone = models.CharField(max_length=15)
     date = models.DateTimeField()
-    number= models.IntegerField(max_length=20)
+    number= models.IntegerField()
     message = models.TextField()
 
     def __str__(self):
