@@ -5,7 +5,7 @@ from cafeapp import views
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('index/', views.index, name='index'),
     path('starter/', views.starter, name='starter'),
     path('about/', views.about, name='about'),
     path('booking/', views.booking, name='booking'),
@@ -24,5 +24,7 @@ urlpatterns = [
     path('stk/', views.stk, name='stk'),
     path('token/', views.token, name='token'),
     path('transactions/', views.transactions_list, name='transactions'),
+    path('', views.login, name='login'),
+    path('register/', views.registration, name='register'),
 
 ]
